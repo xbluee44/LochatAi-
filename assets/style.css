@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
+
+header {
+  background: #1e293b;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  width: 35px;
+  height: 35px;
+}
+
+.login-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.login-container h1 span {
+  color: #60a5fa;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+.login-form input, .login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-form button {
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background: #2563eb;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.menu a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #93c5fd;
+}
+
+#chat-container {
+  height: 70vh;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.chat-input {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  background: #1e293b;
+}
+
+.chat-input input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.chat-input button {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.builder-container {
+  display: flex;
+  height: 70vh;
+}
+
+textarea {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+iframe {
+  width: 50%;
+  background: white;
+  border: none;
+}
+
+#runCode {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  }
