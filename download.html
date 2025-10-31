@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Video | LochatAi</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="download-page">
+  <header>
+    <a href="dashboard.html" class="back">⬅</a>
+    <h2>Download Video</h2>
+  </header>
+
+  <div class="download-container">
+    <input type="text" id="videoUrl" placeholder="Tempel URL video...">
+    <button id="downloadBtn">Download</button>
+    <p id="downloadStatus"></p>
+  </div>
+
+  <script>
+    document.getElementById("downloadBtn").onclick = () => {
+      const url = document.getElementById("videoUrl").value;
+      const status = document.getElementById("downloadStatus");
+      if (url.trim() === "") {
+        status.textContent = "Masukkan URL terlebih dahulu!";
+      } else {
+        status.textContent = "🔄 Sedang menyiapkan link download...";
+        setTimeout(() => {
+          status.textContent = "✅ Video siap diunduh (fitur demo).";
+        }, 2000);
+      }
+    };
+  </script>
+</body>
+</html>
