@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Web | LochatAi</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="webbuilder">
+  <header>
+    <a href="dashboard.html" class="back">⬅</a>
+    <h2>Web Builder LochatAi</h2>
+  </header>
+
+  <div class="builder-container">
+    <textarea id="htmlCode" placeholder="Tulis HTML di sini..."></textarea>
+    <iframe id="preview"></iframe>
+  </div>
+
+  <button id="runCode">Tampilkan Preview</button>
+
+  <script>
+    document.getElementById("runCode").onclick = () => {
+      const code = document.getElementById("htmlCode").value;
+      const preview = document.getElementById("preview").contentWindow.document;
+      preview.open();
+      preview.write(code);
+      preview.close();
+    };
+  </script>
+</body>
+</html>
